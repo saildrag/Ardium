@@ -8,7 +8,7 @@
     "java": {
         "oracle": "http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"
     },
-    "rss": "https://forum.westeroscraft.com/forum/news.2/index.rss",
+    "rss": "https://raw.githubusercontent.com/saildrag/test-auncher/main/docs/index.rss",
     "servers": [
       {
         "id": "Ardium-1.12.2",
