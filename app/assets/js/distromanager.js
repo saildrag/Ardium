@@ -1,12 +1,10 @@
 const fs = require('fs')
 const path = require('path')
 const request = require('request')
-const ConfigManager = require('./configmanager')
-const logger = require('./loggerutil')('%c[DistroManager]', 'color: #a02d2a; font-weight: bold')
-const constants = require('../../config/constants')
-const isDev = require('../../assets/js/isdev')
 
-const distributionURL = constants.LIVE_DISTRIBUTION_URL
+const ConfigManager = require('./configmanager')
+const logger        = require('./loggerutil')('%c[DistroManager]', 'color: #a02d2a; font-weight: bold')
+
 /**
  * Represents the download information
  * for a specific module.
@@ -401,13 +399,6 @@ class Server {
     }
 
     /**
-     * @returns {string} The server code for this server
-     */
-    getServerCode(){
-        return this.serverCode
-    }
-
-    /**
      * @returns {boolean} Whether or not the server is autoconnect.
      * by default.
      */
@@ -509,24 +500,6 @@ class DistroIndex {
     }
 
     /**
-     * Get a server configuration by its ID. If it does not
-     * exist, null will be returned.
-     *
-     * @param {string} id The ID of the server.
-     *
-     * @returns {Server[]} The server configuration with the given ID or null.
-     */
-    getServersFromCode(code){
-        let servs = []
-        for(let serv of this.servers){
-            if(serv.serverCode === code){
-                servs.push(serv)
-            }
-        }
-        return servs
-    }
-
-    /**
      * Get the main server.
      * 
      * @returns {Server} The main server.
@@ -558,19 +531,22 @@ let data = null
 
 /**
  * @returns {Promise.<DistroIndex>}
- * Pulls the remote version of the distribution file from the correct URLs, requiring a download.
  */
 exports.pullRemote = function(){
-    logger.info('Now preparing to pull distribution from remote server.')
+    if(DEV_MODE){
+        return exports.pullLocal()
+    }
     return new Promise((resolve, reject) => {
+        //const distroURL = 'https://www.dropbox.com/s/ojv7y6yloqjbx1z/distribution.json?dl=1'
+        const distroURL = 'https://raw.githubusercontent.com/saildrag/Launcher/master/docs/distribution.json'
         const opts = {
-            url: distributionURL,
-            timeout: 30000
+            url: distroURL,
+            timeout: 2500
         }
         const distroDest = path.join(ConfigManager.getLauncherDirectory(), 'distribution.json')
-
         request(opts, (error, resp, body) => {
             if(!error){
+                
                 try {
                     data = DistroIndex.fromJSON(JSON.parse(body))
                 } catch (e) {
@@ -580,16 +556,16 @@ exports.pullRemote = function(){
 
                 fs.writeFile(distroDest, body, 'utf-8', (err) => {
                     if(!err){
-                        ConfigManager.setDistributionVersion(String(resp.headers['etag']))
-                        ConfigManager.save()
                         resolve(data)
-                        logger.info('Pulled distribution from remote server.')
+                        return
                     } else {
                         reject(err)
+                        return
                     }
                 })
             } else {
                 reject(error)
+                return
             }
         })
     })
@@ -597,49 +573,17 @@ exports.pullRemote = function(){
 
 /**
  * @returns {Promise.<DistroIndex>}
- * Pulls the local version of the distribution file, does not require any downloading.
  */
 exports.pullLocal = function(){
-    logger.info('Now preparing to pull distribution from local.')
     return new Promise((resolve, reject) => {
         fs.readFile(DEV_MODE ? DEV_PATH : DISTRO_PATH, 'utf-8', (err, d) => {
             if(!err){
                 data = DistroIndex.fromJSON(JSON.parse(d))
                 resolve(data)
-                logger.info('Pulled distribution from local.')
                 return
             } else {
                 reject(err)
                 return
-            }
-        })
-    })
-}
-
-/**
- * @returns {Promise.<DistroIndex>}
- * Runs a remote ETag version check on the distribution file. If it matches the locally stored version, grab the local.
- */
-exports.pullRemoteIfOutdated = function(){
-    return new Promise((resolve, reject) => {
-        request.head(distributionURL, (err, resp) => {
-            if(!err && resp.statusCode === 200){
-                const tag = resp.headers['etag']
-                if(tag === ConfigManager.getDistributionVersion()){
-                    this.pullLocal().then(data => {
-                        resolve(data)
-                    }).catch(err => {
-                        resolve(err)
-                    })
-                } else {
-                    this.pullRemote().then(data => {
-                        resolve(data)
-                    }).catch(err => {
-                        resolve(err)
-                    })
-                }
-            } else {
-                reject(err)
             }
         })
     })
