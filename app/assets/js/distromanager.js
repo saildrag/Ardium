@@ -538,7 +538,7 @@ exports.pullRemote = function(){
     }
     return new Promise((resolve, reject) => {
         //const distroURL = 'https://www.dropbox.com/s/ojv7y6yloqjbx1z/distribution.json?dl=1'
-        const distroURL = 'https://raw.githubusercontent.com/saildrag/Launcher/master/docs/distribution.json'
+        const distroURL = 'https://raw.githubusercontent.com/saildrag/Ardium/main/docs/distribution.json'
         const opts = {
             url: distroURL,
             timeout: 2500
