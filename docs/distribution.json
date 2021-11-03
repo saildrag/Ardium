@@ -1,1 +1,394 @@
-Test
+{
+  "version": "1.0.0",
+  "rss": "https://raw.githubusercontent.com/saildrag/Ardium/main/docs/index.rss",
+  "discord": {
+    "clientId": "903704444850561085",
+    "smallImageText": "Ardium",
+    "smallImageKey": "ardium"
+  },
+  "servers": [
+    {
+      "id": "Ardium-1.12.2",
+      "name": "Ardium",
+      "description": "Ardium PVP Faction 1.12.2",
+      "icon": null,
+      "version": "1.0.0",
+      "address": "gmv3.inovaperf.fr:25810",
+      "minecraftVersion": "1.12.2",
+      "mainServer": true,
+      "autoconnect": true,
+      "modules": [
+        {
+          "id": "net.minecraftforge:forge:1.12.2-14.23.5.2855:universal",
+          "name": "Minecraft Forge",
+          "type": "ForgeHosted",
+          "artifact": {
+            "size": 4464387,
+            "MD5": "02fcc447bb8938e5214292e4d36ec949",
+            "url": "https://www.dropbox.com/s/20ogbwrs9k6ng7u/forge-1.12.2-14.23.5.2855-universal.jar?dl=1"
+          },
+          "subModules": [
+            {
+              "id": "1.12.2-14.23.5.2855",
+              "name": "Minecraft Forge (version.json)",
+              "type": "VersionManifest",
+              "artifact": {
+                "size": 10873,
+                "MD5": "5d114618e561d76e0f692c2d69dcb784",
+                "url": "https://raw.githubusercontent.com/saildrag/Ardium/main/docs/1.12.2-forge.json"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-debug-all:5.2@jar",
+              "name": "Minecraft Forge (asm-debug-all)",
+              "type": "Library",
+              "artifact": {
+                "size": 387903,
+                "MD5": "fe5f20404ccdee9769ef05dc4b47ba98",
+                "url": "https://www.dropbox.com/s/keb66jl3hhtdt6d/asm-debug-all-5.2.jar?dl=1"
+              }
+            },
+            {
+              "id": "net.minecraft:launchwrapper:1.12@jar",
+              "name": "Minecraft Forge (launchwrapper)",
+              "type": "Library",
+              "artifact": {
+                "size": 32999,
+                "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
+                "url": "https://www.dropbox.com/s/4m2ultdawdj6jxv/launchwrapper-1.12.jar?dl=1"
+              }
+            },
+            {
+              "id": "org.jline:jline:3.5.1@jar",
+              "name": "Minecraft Forge (jline)",
+              "type": "Library",
+              "artifact": {
+                "size": 614590,
+                "MD5": "4c20d2879ed2bd75a0771ce29e89f6b0",
+                "url": "https://www.dropbox.com/s/reakg54ecjryzsl/jline-3.5.1.jar?dl=1"
+              }
+            },
+            {
+              "id": "com.typesafe.akka:akka-actor_2.11:2.3.3@jar",
+              "name": "Minecraft Forge (akka-actor_2.11)",
+              "type": "Library",
+              "artifact": {
+                "size": 2514991,
+                "MD5": "541440ca0819ebada47d6d1a8b3ee9e1",
+                "url": "https://www.dropbox.com/s/6fddlq12dd60kcn/akka-actor_2.11-2.3.3.jar?dl=1"
+              }
+            },
+            {
+              "id": "com.typesafe:config:1.2.1@jar",
+              "name": "Minecraft Forge (config)",
+              "type": "Library",
+              "artifact": {
+                "size": 219554,
+                "MD5": "3aaf3c6e76a68e732c17d4a7e9877d81",
+                "url": "https://www.dropbox.com/s/jpd39aq2dozbk6w/config-1.2.1.jar?dl=1"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-actors-migration_2.11:1.1.0@jar",
+              "name": "Minecraft Forge (scala-actors-migration_2.11)",
+              "type": "Library",
+              "artifact": {
+                "size": 58018,
+                "MD5": "f5e79398daa1806f8b17311a3c782723",
+                "url": "https://www.dropbox.com/s/gc82mq3arofrqpx/scala-actors-migration_2.11-1.1.0.jar?dl=1"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-compiler:2.11.1@jar",
+              "name": "Minecraft Forge (scala-compiler)",
+              "type": "Library",
+              "artifact": {
+                "size": 13449765,
+                "MD5": "06030143bf86ca896fb6ccfd679b5760",
+                "url": "https://www.dropbox.com/s/elyi7lcc4ntqzvg/scala-compiler-2.11.1.jar?dl=1"
+              }
+            },
+            {
+              "id": "org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2_mc@jar",
+              "name": "Minecraft Forge (scala-continuations-library_2.11)",
+              "type": "Library",
+              "artifact": {
+                "size": 25365,
+                "MD5": "004d7007abbcee858d3ca2c3ccbcbaab",
+                "url": "https://www.dropbox.com/s/t1s0htai446ucki/scala-continuations-library_2.11-1.0.2_mc.jar?dl=1"
+              }
+            },
+            {
+              "id": "org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2_mc@jar",
+              "name": "Minecraft Forge (scala-continuations-plugin_2.11.1)",
+              "type": "Library",
+              "artifact": {
+                "size": 206575,
+                "MD5": "359c4a6743a082c689039482eed78670",
+                "url": "https://www.dropbox.com/s/4gesm57dl2cvagv/scala-continuations-plugin_2.11.1-1.0.2_mc.jar?dl=1"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-library:2.11.1@jar",
+              "name": "Minecraft Forge (scala-library)",
+              "type": "Library",
+              "artifact": {
+                "size": 5538130,
+                "MD5": "1d88f665219e6006c5dd82d71c525c0f",
+                "url": "https://www.dropbox.com/s/9lodsfyz98nam2u/scala-library-2.11.1.jar?dl=1"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-parser-combinators_2.11:1.0.1@jar",
+              "name": "Minecraft Forge (scala-parser-combinators_2.11)",
+              "type": "Library",
+              "artifact": {
+                "size": 419701,
+                "MD5": "4e694499c965af4a02599c99d4f0b196",
+                "url": "https://www.dropbox.com/s/rul3rwfu5x2iw35/scala-parser-combinators_2.11-1.0.1.jar?dl=1"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-reflect:2.11.1@jar",
+              "name": "Minecraft Forge (scala-reflect)",
+              "type": "Library",
+              "artifact": {
+                "size": 4372892,
+                "MD5": "7878fac044e4e4b576bb35a77ccc34fc",
+                "url": "https://www.dropbox.com/s/li7km2k3sneoe87/scala-reflect-2.11.1.jar?dl=1"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-swing_2.11:1.0.1@jar",
+              "name": "Minecraft Forge (scala-swing_2.11)",
+              "type": "Library",
+              "artifact": {
+                "size": 726500,
+                "MD5": "1009d69e4948045383f2a7a334348af5",
+                "url": "https://www.dropbox.com/s/twi58ncl1ig7td4/scala-swing_2.11-1.0.1.jar?dl=1"
+              }
+            },
+            {
+              "id": "org.scala-lang:scala-xml_2.11:1.0.2@jar",
+              "name": "Minecraft Forge (scala-xml_2.11)",
+              "type": "Library",
+              "artifact": {
+                "size": 648679,
+                "MD5": "c2d7e66495afe14545c31b21e99879ef",
+                "url": "https://www.dropbox.com/s/v94wtxopg5u8vhy/scala-xml_2.11-1.0.2.jar?dl=1"
+              }
+            },
+            {
+              "id": "lzma:lzma:0.0.1@jar",
+              "name": "Minecraft Forge (lzma)",
+              "type": "Library",
+              "artifact": {
+                "size": 5762,
+                "MD5": "a3e3c3186e41c4a1a3027ba2bb23cdc6",
+                "url": "https://www.dropbox.com/s/oceizr5u4nm1iz0/lzma-0.0.1.jar?raw=1"
+              }
+            },
+            {
+              "id": "java3d:vecmath:1.5.2@jar",
+              "name": "Minecraft Forge (vecmath)",
+              "type": "Library",
+              "artifact": {
+                "size": 318956,
+                "MD5": "e5d2b7f46c4800a32f62ce75676a5710",
+                "url": "https://www.dropbox.com/s/6jb73akx3saxb87/vecmath-1.5.2.jar?dl=1"
+              }
+            },
+            {
+              "id": "net.sf.trove4j:trove4j:3.0.3@jar",
+              "name": "Minecraft Forge (trove4j)",
+              "type": "Library",
+              "artifact": {
+                "size": 2523218,
+                "MD5": "8fc4d4e0129244f9fd39650c5f30feb2",
+                "url": "https://www.dropbox.com/s/f8mhbp7hweao47b/trove4j-3.0.3.jar?dl=1"
+              }
+            },
+            {
+              "id": "org.apache.maven:maven-artifact:3.5.3@jar",
+              "name": "Minecraft Forge (maven-artifact)",
+              "type": "Library",
+              "artifact": {
+                "size": 54961,
+                "MD5": "7741ebf29690ee7d9dde9cf4376347fc",
+                "url": "https://www.dropbox.com/s/ucavxaftyy3vxyg/maven-artifact-3.5.3.jar?dl=1"
+              }
+            },
+            {
+              "id": "net.sf.jopt-simple:jopt-simple:5.0.3@jar",
+              "name": "Minecraft Forge (jopt-simple)",
+              "type": "Library",
+              "artifact": {
+                "size": 78175,
+                "MD5": "0a5ec84e23df9d7cfb4063bc55f2744c",
+                "url": "https://www.dropbox.com/s/37b8lyycmwguc4o/jopt-simple-5.0.3.jar?dl=1"
+              }
+            }
+          ]
+        },
+        {
+          "id": "net.geforcemods:securitycraft:v1.8.12.1@jar",
+          "name": "SecurityCraft",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1395271,
+            "url": "https://www.dropbox.com/s/ccr8z284x5zvmrv/%5B1.12.2%5D%2BSecurityCraft%2Bv1.8.12.1.jar?dl=1",
+            "MD5": "3416f289fdff41d575350f548d9b8b4c"
+          }
+        },
+        {
+          "id": "net.mcreator:theaerilonlegacymod:0.2.1@jar",
+          "name": "The Aerilon Legacy Mod!",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 22962324,
+            "url": "https://www.dropbox.com/s/lnzib738ziowfom/Aerilon%20Legacy%20Mod%21%200.2.1%20%5B1.12.2%5D.jar?dl=1",
+            "MD5": "dce807c1fdf625e195bc929f07cab5a0"
+          }
+        },
+        {
+          "id": "com.creativemd:ambientsounds:3.0@jar",
+          "name": "AmbientSounds",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 76506553,
+            "url": "https://www.dropbox.com/s/pem2mfmbc0krfc9/AmbientSounds_v3.0.9_mc1.12.2.jar?dl=1",
+            "MD5": "a050bc219e9cace2b49b87191f5199bb"
+          }
+        },
+        {
+          "id": "team.creative.cmdcam:cmdcam_v1.5.23_mc1.17.1:0.0.0@jar",
+          "name": "CMDCam_v1.5.23_mc1.17.1",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 82759,
+            "url": "https://www.dropbox.com/s/36skpt3yec62tt3/CMDCam_v1.5.23_mc1.17.1.jar?dl=1",
+            "MD5": "8b4cf0da6670298834a5a783a29a63a0"
+          }
+        },
+        {
+          "id": "de.maxhenkel:corpse:1.12.2-1.0.2@jar",
+          "name": "Corpse",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 65364,
+            "url": "https://www.dropbox.com/s/rcfek1zkc2hz65c/corpse-1.12.2-1.0.2.jar?dl=1",
+            "MD5": "eb48c49faff9a8eb027938d4362d8e12"
+          }
+        },
+        {
+          "id": "nl.requios:effortlessbuilding:1.12.2-2.16@jar",
+          "name": "Effortless Building",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 468802,
+            "url": "https://www.dropbox.com/s/ddd8e9nd3gpr992/effortlessbuilding-1.12.2-2.16.jar?dl=1",
+            "MD5": "9167da7c02dbf88583550d8ea3920742"
+          }
+        },
+        {
+          "id": "cpw.mods:ironchest:1.12.2-7.0.72.847@jar",
+          "name": "Iron Chests",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 956692,
+            "url": "https://www.dropbox.com/s/refobde2zfwbpx2/ironchest-1.12.2-7.0.72.847.jar?dl=1",
+            "MD5": "743179bc3a8f50751efbb019acc759a9"
+          }
+        },
+        {
+          "id": "mezz.jei:jei:4.16.1.302@jar",
+          "name": "Just Enough Items",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 653210,
+            "url": "https://www.dropbox.com/s/paqp670uh07wg2k/jei_1.12.2-4.16.1.302.jar?dl=1",
+            "MD5": "2dc4b6046812e64c514ff4d18bc5cb03"
+          }
+        },
+        {
+          "id": "com.vicmatskiv:mw:0.4.6.2@jar",
+          "name": "Modern Warfare 2.0 Contagion",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 34769031,
+            "url": "https://www.dropbox.com/s/e3ymfqx08i6wlhl/mw_2.0-0.4.6.2_mc1.12.2.jar?dl=1",
+            "MD5": "8b2ef750aa23bfd7e8d78f38acd2a1e6"
+          }
+        },
+        {
+          "id": "vazkii.neat:neat:1.4-17@jar",
+          "name": "Neat",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 18527,
+            "url": "https://www.dropbox.com/s/k23wwjgtt4bj6h6/Neat%2B1.4-17.jar?dl=1",
+            "MD5": "c371deab2490ecd6a2689eed09302d23"
+          }
+        },
+        {
+          "id": "net.optifine:optifine:1.12.2_HD_U_G5@jar",
+          "name": "OptiFine 1.12.2_HD_U_G5",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 2669107,
+            "url": "https://www.dropbox.com/s/8lgxtu40g3efi97/OptiFine_1.12.2_HD_U_G5.jar?dl=1",
+            "MD5": "54e561e441192cf009803ae95873c5d0"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "com.replaymod.core:replaymod:1.12.2-2.6.1@jar",
+          "name": "Replay Mod",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 11260440,
+            "url": "https://www.dropbox.com/s/ue01wijjrqog1qw/replaymod-1.12.2-2.6.1.jar?dl=1",
+            "MD5": "fbbd251767124aa4ffa272d293e581cf"
+          }
+        },
+        {
+          "id": "lellson.roughtweaks:roughtweaks:1.0@jar",
+          "name": "Rough Tweaks",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 25840,
+            "url": "https://www.dropbox.com/s/gpvn1bteblad65l/roughTweaks0.2.3-1.12.jar?dl=1",
+            "MD5": "489d27954d3c194b647d727b252f1b3c"
+          }
+        },
+        {
+          "id": "net.gliby.voicechat:gvc:1.2.5@jar",
+          "name": "Gliby's Voice Chat Mod",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 423682,
+            "url": "https://www.dropbox.com/s/14ytwbzw67gqfjd/Voice%2BChat%2BReloaded-1.2.5.jar?dl=1",
+            "MD5": "13344fa9ab436f944f354fb8687306d8"
+          }
+        },
+        {
+          "id": "com.sk89q:worldedit:6.1.10-SNAPSHOT;e6b38e8@jar",
+          "name": "WorldEdit",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1479535,
+            "url": "https://www.dropbox.com/s/gdg09cqzmj7vyuf/worldedit-forge-mc1.12.2-6.1.10-dist.jar?dl=1",
+            "MD5": "bdf6d8d20591c014fed66633f4ef3b23"
+          },
+          "required": {
+            "value": false,
+            "def": false
+          }
+        }
+      ]
+    }
+  ]
+}
+
