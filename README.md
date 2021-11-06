@@ -12,14 +12,14 @@ You can download from [GitHub Releases](https://github.com/saildrag/Ardium/relea
 
 #### Latest Release
 
-[![](https://img.shields.io/github/release/dscalzi/HeliosLauncher.svg?style=flat-square)](https://github.com/saildrag/Ardium/releases/latest)
+[![](https://img.shields.io/github/release/saildrag/Ardium.svg?style=flat-square)](https://github.com/saildrag/Ardium/releases/latest)
 
 #### Latest Pre-Release
-[![](https://img.shields.io/github/release/dscalzi/HeliosLauncher/all.svg?style=flat-square)](https://github.com/saildrag/Ardium/releases)
+[![](https://img.shields.io/github/release/saildrag/Ardium/all.svg?style=flat-square)](https://github.com/saildrag/Ardium/releases)
 
 **Supported Platforms**
 
-If you download from the [Releases](https://github.com/dscalzi/HeliosLauncher/releases) tab, select the installer for your system.
+If you download from the [Releases](https://github.com/saildrag/Ardium/releases) tab, select the installer for your system.
 
 | Platform | File |
 | -------- | ---- |

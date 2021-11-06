@@ -1,9 +1,9 @@
 {
   "name": "ardium",
-  "version": "1.0.1-release",
+  "version": "1.0.2-release",
   "productName": "Ardium Launcher",
   "description": "Modded Minecraft Launcher",
-  "author": "Daniel Scalzi (https://github.com/dscalzi/)",
+  "author": "Saildrag (https://github.com/saildrag/)",
   "license": "Saildrag",
   "homepage": "https://github.com/saildrag/Ardium",
   "bugs": {
