@@ -261,16 +261,6 @@
           }
         },
         {
-          "id": "team.creative.cmdcam:cmdcam_v1.5.23_mc1.17.1:0.0.0@jar",
-          "name": "CMDCam_v1.5.23_mc1.17.1",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 82759,
-            "url": "https://www.dropbox.com/s/36skpt3yec62tt3/CMDCam_v1.5.23_mc1.17.1.jar?raw=1",
-            "MD5": "8b4cf0da6670298834a5a783a29a63a0"
-          }
-        },
-        {
           "id": "de.maxhenkel:corpse:1.12.2-1.0.2@jar",
           "name": "Corpse",
           "type": "ForgeMod",
@@ -341,16 +331,6 @@
           },
           "required": {
             "value": false
-          }
-        },
-        {
-          "id": "com.replaymod.core:replaymod:1.12.2-2.6.1@jar",
-          "name": "Replay Mod",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 11260440,
-            "url": "https://www.dropbox.com/s/ue01wijjrqog1qw/replaymod-1.12.2-2.6.1.jar?raw=1",
-            "MD5": "fbbd251767124aa4ffa272d293e581cf"
           }
         },
         {
